@@ -1,0 +1,9 @@
+[submodule "plugins/message_label"]
+	path = plugins/message_label
+	url = https://umount@github.com/umount/message_label.git
+[submodule "plugins/rcguard"]
+	path = plugins/rcguard
+	url = https://github.com/dennylin93/rcguard.git
+[submodule "plugins/rememberme"]
+	path = plugins/rememberme
+	url = https://github.com/lefoyer/rememberme.git

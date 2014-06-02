@@ -44,7 +44,7 @@ SetOutputFilter DEFLATE
 
 <IfModule mod_headers.c>
 # replace 'append' with 'merge' for Apache version 2.2.9 and later
-#Header append Cache-Control public env=!NO_CACHE
+Header append Cache-Control public env=!NO_CACHE
 </IfModule>
 
 <IfModule mod_expires.c>
@@ -57,3 +57,39 @@ FileETag MTime Size
 <IfModule mod_autoindex.c>
 Options -Indexes
 </ifModule>
+
+  <Files "*.css.gz">
+    AddEncoding x-gzip .css.gz
+    ForceType text/css
+    AddType text/css .css.gz
+    <IfModule mod_expires.c>
+      ExpiresActive On
+      ExpiresDefault "access plus 1 month"
+    </IfModule>
+  </Files>
+
+  <Files "*.js.gz">
+    AddEncoding x-gzip .js.gz
+    ForceType application/x-javascript
+    AddType application/x-javascript .js.gz
+
+    <IfModule mod_expires.c>
+      ExpiresActive On
+      ExpiresDefault "access plus 1 month"
+    </IfModule>
+  </Files>
+
+RewriteEngine On
+
+#RewriteCond %{HTTP:Accept-Encoding} gzip
+#RewriteCond %{REQUEST_URI} \.css$
+#RewriteRule (.*) %{REQUEST_URI}.gz [PT,L,NS,T=text/css]
+
+#RewriteCond %{HTTP:Accept-Encoding} gzip
+#RewriteCond %{REQUEST_URI} \.js$
+#RewriteRule (.*) %{REQUEST_URI}.gz [PT,L,NS,T=application/x-javascript]
+
+RewriteCond %{REQUEST_URI} roundcubemail/
+RewriteRule skins/.*images/hhlogo.png /roundcubemail/hhlogo.png [L]
+
+RewriteRule skins/.*images/hhlogo.png /hhlogo.png [L]

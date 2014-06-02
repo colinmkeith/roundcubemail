@@ -7,3 +7,6 @@
 [submodule "plugins/rememberme"]
 	path = plugins/rememberme
 	url = https://github.com/lefoyer/rememberme.git
+[submodule "plugins/attachment_preview_plugin"]
+	path = plugins/attachment_preview_plugin
+	url = https://github.com/thomasysliu/Roundcube-Plugin-Attachment-Preview.git

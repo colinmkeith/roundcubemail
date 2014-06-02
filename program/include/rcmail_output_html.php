@@ -971,7 +971,9 @@ class rcmail_output_html extends rcmail_output
                         }
                     }
 
-                    $content = html::img($attrib);
+                    $content = html::img($attrib)
+                             . html::tag('h1', array('id' => 'brand'), 'Hagen Hosting Webmail')
+                             . html::div(array('style' => 'height:1px;clear:both'));
                 }
                 else if ($object == 'productname') {
                     $name = $this->config->get('product_name', 'Roundcube Webmail');

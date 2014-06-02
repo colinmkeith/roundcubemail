@@ -10,3 +10,6 @@
 [submodule "plugins/attachment_preview_plugin"]
 	path = plugins/attachment_preview_plugin
 	url = https://github.com/thomasysliu/Roundcube-Plugin-Attachment-Preview.git
+[submodule "plugins/dovecot_impersonate"]
+	path = plugins/dovecot_impersonate
+	url = https://github.com/corbosman/dovecot_impersonate

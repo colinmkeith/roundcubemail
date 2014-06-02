@@ -13,3 +13,6 @@
 [submodule "plugins/dovecot_impersonate"]
 	path = plugins/dovecot_impersonate
 	url = https://github.com/corbosman/dovecot_impersonate
+[submodule "plugins/sshguard"]
+	path = plugins/sshguard
+	url = https://github.com/colinmkeith/roundcube_plugin_sshguard.git

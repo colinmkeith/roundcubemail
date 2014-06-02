@@ -1,0 +1,16 @@
+Roundcube ServerInfo plugin: CHANGELOG
+Last updated: 2009-11-06
+===========================================
+
+2009-11-06
+==========
+ * Changed CSS class for box header (got broken i Roundcube 0.3.1)
+
+2009-09-26
+==========
+ * Added some more dynamic variables (for generating hostnames)
+ * Custom fields / custom content includes can be added in config
+
+2009-09-25
+==========
+ * First public release

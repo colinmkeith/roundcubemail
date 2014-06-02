@@ -1,0 +1,43 @@
+Roundcube ServerInfo plugin: README
+Last updated: 2009-09-26
+===========================================
+
+About
+================
+
+Plugin that displays some basic server info. It is also possible to
+add custom fields and use dynamic variables.
+
+Main focus is server names, port numbers and capabilities, to make it
+easier for the users to configure their third party mail clients.
+
+Possible future versions will be posted to:
+http://axel.sjostedt.no/misc/dev/roundcube/
+
+Author
+================
+Written by Axel Sjostedt.
+
+Install
+================
+
+* Place plugin folder into plugins directory of Roundcube
+* Enable the plugin by adding it to the Roundcube configuration file 
+  Example: 
+     $rcmail_config['plugins'] = array("serverinfo", "otherplugin")
+
+Configuration 
+================
+
+The default configuration works out of the box, but some information
+fields will probably be wrong, and you need to edit the configuration:
+
+* Copy config.inc.php.dist to config.inc.php in the plugin folder
+  It is recommended to keep the dist file.
+* Open config.inc.php and edit the configuration to best reflect your
+  server.
+* If you have more information you want to add, you can put it in custom
+  fields in some of the categories in the Server Information box, or
+  enable the custom bottom box. If including a file box, make sure to use
+  your own file name instead of editing the example file directly, to
+  avoid your customized file being overwritten on plugin upgrade.

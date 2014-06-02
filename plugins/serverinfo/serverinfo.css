@@ -1,0 +1,59 @@
+/*
+	ServerInfo CSS file
+	default CSS last updated in version 2009-09-26
+*/
+
+div.settingsbox-serverinfo, div.settingsbox-serverinfo-custom {
+	/* Expand the width of the box instead of breaking lines */
+	margin: 0 15px 15px 0;
+}
+
+div.settingsbox-serverinfo div.boxcontent {
+	padding: 15px;	
+}
+
+div.settingsbox-serverinfo-custom div.boxcontent {
+	padding: 5px 15px;
+}
+
+table.serverinfo {
+	margin: 0;
+}
+
+
+table.serverinfo td {
+	padding: 2px 0 6px 0;
+	vertical-align: top;
+}
+
+
+table.serverinfo td.header {
+	font-weight: bold;
+	padding-top: 15px;
+	
+}
+
+table.serverinfo td.headerfirst {
+	font-weight: bold;
+	
+}
+
+table.serverinfo td.title {
+	padding-right: 20px;
+	white-space: nowrap;
+	
+}
+
+table.serverinfo td.categorynote {
+	font-style: italic;
+}
+
+span.fieldnote-parentheses {
+	/* style notes about field value - parentheses versions */
+}
+
+span.fieldnote-newline {
+	/* style notes about field value - newline versions */
+	display: block;
+	margin-top: 2px;
+}

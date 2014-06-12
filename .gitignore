@@ -13,3 +13,9 @@ composer.json
 composer.phar
 composer.lock
 vendor
+
+*.css.gz
+*.js.gz
+
+plugins/serverinfo/serverinfo.js.gz
+plugins/serverinfo/serverinfo.css.gz

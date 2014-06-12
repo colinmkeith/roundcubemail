@@ -2634,28 +2634,28 @@ fieldset.tab {
 	margin-top: 3px;
 }
 
-#toplogos + #brand {
+#toplogo + #brand {
 	width: auto;
 	width: auto;
 	margin: 7px 0 0 15px;
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {;
-	#login-form {;
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+	#login-form {
 		margin: 0 auto;
 		width: 98%;
 	}
 
-	#login-form.box-inner {;
+	#login-form.box-inner {
 		margin: 0 auto;
 		width: 98%;
 	}
 
-	#logo {;
+	#logo {
 		margin-left: 5px;
 	}
 
-	label,input,select {;
+	label,input,select {
 		font-size: 150%;
 	}
 }
